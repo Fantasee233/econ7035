@@ -16,6 +16,8 @@ def clean(input1, input2, output):
     merged_df.to_csv(output, index=False)
     print("Data cleaning completed. Cleaned data saved to", output)
 
+    print("Output file shape:", merged_df.shape)
+
 if __name__ == "__main__":
     if len(sys.argv) != 4:
         print("Usage: python clean.py <input1> <input2> <output>")
